@@ -16,3 +16,4 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 WORKDIR /usr/app
 RUN npm init -y && npm install --save-dev hardhat
 RUN npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
+RUN npm install --save-dev dotenv
